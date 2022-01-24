@@ -3,6 +3,7 @@ import HTMLReactParser from "html-react-parser";
 import { useParams } from "react-router-dom";
 import millify from "millify";
 import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
+import LineChart from "./LineChart";
 import { Col, Row, Typography, Select } from "antd";
 import {
   MoneyCollectOutlined,
@@ -120,7 +121,7 @@ const CryptoDetails = () => {
           <Option key={date}>{date}</Option>
         ))}
       </Select>
-      {/* line chart */}
+      <LineChart />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value=statistics-heading">
