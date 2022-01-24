@@ -247,9 +247,12 @@ a:hover {
 .link-name {
   text-transform: capitalize;
   font-size: 1rem;
+  margin: 0 !important;
+  padding: 0;
 }
 
 .coin-link a {
+  margin-left: 2em;
   color: var(--pink);
   font-weight: 700;
   font-size: 1rem;
